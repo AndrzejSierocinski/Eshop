@@ -1,0 +1,18 @@
+<app-block-slideshow></app-block-slideshow>
+<app-block-counter></app-block-counter>
+<app-block-products header="Newest Product" layout="large-last" [products]="products"></app-block-products>
+
+<app-block-features layout="boxed"></app-block-features>
+
+<app-block-products-carousel header="New Arrivals" layout="grid-4" [rows]="2"
+                             [loading]="newArrivals.loading"
+                             [products]="newArrivals.products"
+></app-block-products-carousel>
+
+<app-block-banner></app-block-banner>
+
+<app-block-posts header="Recent Story" layout="grid-nl" [posts]="posts"></app-block-posts>
+
+<app-block-testimonial></app-block-testimonial>
+
+

@@ -1,0 +1,8 @@
+<div class="card">
+    <div class="card-header">
+        <app-alert *ngIf="showAlert" class="mb-2" type="warning" (close)="showAlert = false">
+            <i class="fas fa-exclamation-triangle fa-lg"></i> You have submitted no reviews.
+        </app-alert>
+    </div>
+<!--    <div class="card-body"></div>-->
+</div>

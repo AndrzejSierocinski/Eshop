@@ -1,0 +1,28 @@
+<section class="app2 team">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="main-title">
+                    <h4 class="font-primary borders text-center m-b-0"><span class="">Testimonial</span>
+                    </h4>
+                </div>
+            </div>
+            <div class="col-12">
+                <owl-carousel-o [options]="teamcarouselOptions" class="team-slider">
+                    <ng-container *ngFor="let team of testimonialcarousel">
+                        <ng-template carouselSlide class="item">
+                            <div class="team-container">
+                                <img [src]="team.img" alt="" class="img-fluid members">
+                                <div class="text-center">
+                                    <h5 class="name text-center">{{team.name}}</h5>
+                                    <h6 class="post text-center ">{{team.designation}}</h6>
+                                    <p class="team-para text-center">{{team.description}}</p>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>

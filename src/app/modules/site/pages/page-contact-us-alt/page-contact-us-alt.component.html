@@ -1,0 +1,65 @@
+<app-page-header [header]="'Contact Us'" [breadcrumbs]="[
+    {label: 'Home',       url: '../../'},
+    {label: 'Contact Us', url: ''}
+]"></app-page-header>
+
+<div class="block map-location">
+    <h2>Our location</h2>
+    <div class="container">
+        <div class="card mb-0 contact-us">
+            <div class="contact-us__map">
+                <iframe src='https://maps.google.com/maps?q=Holbrook-Palmer%20Park&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed'
+                        frameborder='0' scrolling='no' marginheight='0' marginwidth='0'></iframe>
+            </div>
+            <div class="card-body">
+                <div class="contact-us__container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <h4 class="contact-us__header card-title">Feedback</h4>
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group feedback col-md-12">
+                                        <p>We want your feedback about everything</p>
+                                        <label for="form-email">Email</label>
+                                        <input type="email" id="form-email" class="form-control" placeholder="E-mail">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-message">Message</label>
+                                    <textarea id="form-message" class="form-control" placeholder="Message for us" rows="6"></textarea>
+                                </div>
+                                <div class="button-feedback">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+
+
+                        <div class="col-12 col-lg-6 pb-4 pb-lg-0">
+                            <h4 class="contact-us__header card-title">Contact Info</h4>
+                            <div class="contact-us__address">
+                                <p>
+                                    13 New Street, San Francisco 12312 USA<br>
+                                    Email: e-shop@example.com<br>
+                                    Phone Number: (33) 123-1234, (33) 123-1235<br>
+                                    Fax: 22 123 12 12
+                                </p>
+                                <p>
+                                    <strong>Opening Hours</strong><br>
+                                    Monday-Saturday 08:00am - 7:00pm
+                                </p>
+                                <p>
+                                    <strong>Comment</strong><br>
+                                    Mauris elementum fermentum enim, at malesuada turpis eleifend non. Etiam sed orci aliquet, hendrerit nisl vel,
+                                    molestie urna. Aenean aliquam ultrices massa in malesuada. Integer sed aliquam dui. Nam pharetra diam faucibus
+                                    tempus efficitur. Nam efficitur justo ac augue vestibulum pretium. Quisque sit amet erat ut augue varius finibus.
+                                    Praesent lobortis congue sodales.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

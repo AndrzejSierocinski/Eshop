@@ -1,0 +1,60 @@
+<div class="dashboard">
+    <div class="dashboard__profile card profile-card">
+        <div class="card-body profile-card__body">
+            <h3>Contact Information</h3>
+            <ng-container *ngFor="let address of addresses">
+                <div class="address-carContact Usd__body">
+                    <br>
+                    <div class="address-card__name">{{ address.firstName + ' ' + address.lastName}}</div>
+                    <div class="address-card__row">
+                        {{ address.country }}<br>
+                        {{ address.postcode }}, {{ address.city }}<br>
+                        {{ address.address }}
+                    </div>
+                    <div class="address-card__row">
+                        <div class="address-card__row-title">Phone Number</div>
+                        <div class="address-card__row-content">{{ address.phone }}</div>
+                    </div>
+                    <div class="address-card__row">
+                        <div class="address-card__row-title">Email Address</div>
+                        <div class="address-card__row-content">{{ address.email }}</div>
+                    </div>
+                </div>
+            </ng-container>
+            <div class="profile-card__edit">
+                <a routerLink="../profile" class="btn btn-secondary btn-sm">Edit</a>
+            </div>
+        </div>
+    </div>
+    <div class="dashboard__profile card profile-card">
+        <div class="card-body profile-card__body">
+            <h3>Newsletters</h3>
+            <p>Integer ut ipsum ac nibh congue scelerisque. Aenean et eros commodo, lacinia eros sed, fermentum nisi. Vestibulum vestibulum, augue
+                vitae sodales interdum, purus mi consectetur tortor, a aliquet urna purus in nisi. Vestibulum sit amet neque tincidunt, sodales
+                tellus id, euismod velit. Etiam in tellus dignissim urna interdum semper. Mauris luctus mollis pharetra. Aliquam ornare convallis leo,
+                vitae vehicula libero ultrices et. Curabitur sit amet ipsum condimentum, faucibus ante placerat./p>
+
+            <div class="profile-card__edit">
+                <a routerLink="../profile" class="btn btn-secondary btn-sm">Edit</a>
+            </div>
+        </div>
+    </div>
+    <div class="dashboard__profile card profile-card">
+        <div class="card-body profile-card__body">
+            <h3>Default Shipping Address</h3>
+            <div class="profile-card__email">You have not set a default shipping address.</div>
+            <div class="profile-card__edit">
+                <a routerLink="../profile" class="btn btn-secondary btn-sm">Edit</a>
+            </div>
+        </div>
+    </div>
+    <div class="dashboard__profile card profile-card">
+        <div class="card-body profile-card__body">
+            <h4>Default Billing Address</h4>
+            <div class="profile-card__email">You have not set a default billing address.</div>
+            <div class="profile-card__edit">
+                <a routerLink="../profile" class="btn btn-secondary btn-sm">Edit</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,111 @@
+<div class="product-tabs" [ngClass]="{'product-tabs--layout--sidebar': withSidebar}">
+    <div class="product-tabs__list">
+        <a href="#tab-description" class="product-tabs__item"
+           [ngClass]="{'product-tabs__item--active': tab === 'description'}"
+           (click)="$event.preventDefault(); tab = 'description'">Details</a>
+
+        <a href="#tab-specification" class="product-tabs__item"
+           [ngClass]="{'product-tabs__item--active': tab === 'specification'}"
+           (click)="$event.preventDefault(); tab = 'specification'">More Information</a>
+
+        <a href="#tab-reviews" class="product-tabs__item"
+           [ngClass]="{'product-tabs__item--active': tab === 'reviews'}"
+           (click)="$event.preventDefault(); tab = 'reviews'">Reviews</a>
+    </div>
+    <div class="product-tabs__content">
+
+        <div class="product-tabs__pane" id="tab-description" [ngClass]="{'product-tabs__pane--active': tab === 'description'}">
+            <div class="typography">
+                <h3>Product Full Details</h3>
+                <p>
+                    Mauris elementum fermentum enim, at malesuada turpis eleifend non. Etiam sed orci aliquet, hendrerit nisl vel, molestie urna.
+                    Aenean aliquam ultrices massa in malesuada. Integer sed aliquam dui. Nam pharetra diam faucibus tempus efficitur. Nam efficitur
+                    justo ac augue vestibulum pretium. Quisque sit amet erat ut augue varius finibus. Praesent lobortis congue sodales. Cras ex diam,
+                    pretium ut sem vel, commodo sollicitudin nibh.
+                </p>
+                <h3>Product Information</h3>
+                <p>Integer ut ipsum ac nibh congue scelerisque. Aenean et eros commodo, lacinia eros sed, fermentum nisi. Vestibulum vestibulum, augue
+                    vitae sodales interdum, purus mi consectetur tortor, a aliquet urna purus in nisi. Praesent tincidunt odio ut posuere aliquam.
+                    Praesent a bibendum ipsum. Donec nec imperdiet orci. Nullam varius, lacus sit amet fringilla eleifend, magna eros fermentum augue,
+                    non hendrerit nibh urna et justo. Sed at ante a magna pretium dignissim. Nam tortor nunc, volutpat vitae ornare id, auctor nec
+                    ipsum. Suspendisse felis nulla, mattis eget turpis et, condimentum aliquam justo. Etiam ac iaculis sapien, vel semper nisl.
+                    Vestibulum sit amet neque tincidunt, sodales tellus id, euismod velit. Sed et tellus ac augue maximus sagittis. Vivamus elementum
+                    sed mauris quis congue. Praesent dolor risus, vehicula sed nisl vel, varius mattis augue. Sed vehicula neque quis est varius
+                    porta.
+                </p>
+            </div>
+        </div>
+
+        <div class="product-tabs__pane" id="tab-specification" [ngClass]="{'product-tabs__pane--active': tab === 'specification'}">
+            <div class="spec">
+                <h3 class="spec__header">Specification</h3>
+                <div class="spec__disclaimer">The tasty Grey Goose is a special French premium Vodka with a perfectly balanced taste and a
+                    particularly mild finish.Integer ut ipsum ac nibh congue scelerisque. Aenean et eros commodo, lacinia eros sed, fermentum nisi.
+                    Vestibulum vestibulum, augue vitae sodales interdum, purus mi consectetur tortor, a aliquet urna purus in nisi. Praesent tincidunt
+                    odio ut posuere aliquam. Praesent a bibendum ipsum.
+                </div>
+                <div *ngFor="let section of specification" class="spec__section">
+                    <h4 class="spec__section-title">{{ section.name }}</h4>
+                    <div *ngFor="let feature of section.features" class="spec__row">
+                        <div class="spec__name">{{ feature.name }}</div>
+                        <div class="spec__value">{{ feature.value }}</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="product-tabs__pane" id="tab-reviews" [ngClass]="{'product-tabs__pane--active': tab === 'reviews'}">
+            <div class="reviews-view">
+                <div class="reviews-view__list">
+                    <h3 class="reviews-view__header">Reviews</h3>
+                    <div class="reviews-list">
+                        <ol class="reviews-list__content">
+                            <li *ngFor="let review of reviews" class="reviews-list__item">
+                                <div class="review">
+                                    <div class="review__avatar"><img [src]="review.avatar" alt=""></div>
+                                    <div class="review__content">
+                                        <div class="review__author">{{ review.author }}</div>
+                                        <div class="review__rating">
+                                            <app-rating [value]="review.rating"></app-rating>
+                                        </div>
+                                        <div class="review__text">{{ review.text }}</div>
+                                        <div class="review__date">{{ review.date }}</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                        <div class="reviews-list__pagination">
+                            <app-pagination [current]="1" [siblings]="2" [total]="10"></app-pagination>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="reviews-view__form">
+                    <h3 class="reviews-view__header">Customer Reviews</h3>
+                    <p>Your Rating <span class="rating_asterisk">*</span></p>
+                    <div class="review-stars">
+                        <star-rating value="5" totalstars="5" checkedcolor="#ffd333" uncheckedcolor="#b3b3b3" size="30px" readonly="false"></star-rating>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-9 col-xl-8">
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="review-author">Nickname <span class="rating_asterisk">*</span></label>
+                                    <input type="text" class="form-control" id="review-author" placeholder="Nickname">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-text">Review <span class="rating_asterisk">*</span></label>
+                                <textarea class="form-control" id="review-text" rows="7"></textarea>
+                            </div>
+                            <div class="form-group mb-0">
+                                <button type="submit" class="btn btn-primary btn-lg">Add Your Review</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

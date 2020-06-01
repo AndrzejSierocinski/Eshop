@@ -1,0 +1,31 @@
+/*
+// .reviews-view
+*/
+@import '../variables';
+@import '../functions';
+
+
+.reviews-view__header {
+    margin-bottom: 10px;
+}
+.review-stars {
+    margin-top: -20px;
+}
+.rating_asterisk {
+    color: red;
+}
+.reviews-view__form {
+    margin-top: 40px;
+    border-top: 1px solid $card-divider-color;
+    padding-top: 60px;
+}
+
+@media (max-width: breakpoint(xs-end)) {
+    .reviews-view__header {
+        margin-bottom: 32px;
+    }
+    .reviews-view__form {
+        margin-top: 30px;
+        padding-top: 50px;
+    }
+}
