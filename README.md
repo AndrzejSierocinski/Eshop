@@ -4,28 +4,16 @@ Check out this project online at http://e-shop.s3-website.eu-west-3.amazonaws.co
 ## Preview
 
 ![alt text](https://github.com/AndrzejSierocinski/Eshop/blob/master/src/assets/images/main.png?raw=true)
-<<<<<<<<< Temporary merge branch 1
-=========================================================================================
+**************************************************************
 ![alt text](https://github.com/AndrzejSierocinski/Eshop/blob/master/src/assets/images/shopping-cart.png?raw=true)
-=========================================================================================
+**************************************************************
 ![alt text](https://github.com/AndrzejSierocinski/Eshop/blob/master/src/assets/images/wish-list.png?raw=true)
-=========================================================================================
+**************************************************************
 ![alt text](https://github.com/AndrzejSierocinski/Eshop/blob/master/src/assets/images/products.png?raw=true)
-=========================================================================================
+**************************************************************
 ![alt text](https://github.com/AndrzejSierocinski/Eshop/blob/master/src/assets/images/account.png?raw=true)
-=========================================================================================
-=========
+**************************************************************
 
-![alt text](https://github.com/AndrzejSierocinski/Eshop/blob/master/src/assets/images/shopping-cart.png?raw=true)
-
-![alt text](https://github.com/AndrzejSierocinski/Eshop/blob/master/src/assets/images/wish-list.png?raw=true)
-
-![alt text](https://github.com/AndrzejSierocinski/Eshop/blob/master/src/assets/images/products.png?raw=true)
-
-![alt text](https://github.com/AndrzejSierocinski/Eshop/blob/master/src/assets/images/account.png?raw=true)
-
->>>>>>>>> Temporary merge branch 2
-![alt text](https://github.com/AndrzejSierocinski/Eshop/blob/master/src/assets/images/contact.png?raw=true)
 
 ## Technology Stacks
 - Angular 8.2.13
