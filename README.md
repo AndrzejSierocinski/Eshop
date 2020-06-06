@@ -1,6 +1,15 @@
 # E-shop
 Check out this project online at http://e-shop-aws.s3-website.eu-central-1.amazonaws.com/
 
+## Preview
+
+![alt text](https://github.com/AndrzejSierocinski/Eshop/blob/master/src/assets/images/main.png?raw=true)
+![alt text](https://github.com/AndrzejSierocinski/Eshop/blob/master/src/assets/images/shopping-cart.png?raw=true)
+![alt text](https://github.com/AndrzejSierocinski/Eshop/blob/master/src/assets/images/wish-list.png?raw=true)
+![alt text](https://github.com/AndrzejSierocinski/Eshop/blob/master/src/assets/images/products.png?raw=true)
+![alt text](https://github.com/AndrzejSierocinski/Eshop/blob/master/src/assets/images/account.png?raw=true)
+![alt text](https://github.com/AndrzejSierocinski/Eshop/blob/master/src/assets/images/contact.png?raw=true)
+
 ## Technology Stacks
 - Angular 8.2.13
 - Typescript 3.5.3
