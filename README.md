@@ -1,5 +1,5 @@
 # E-shop
-Check out this project online at http://e-shop.s3-website.eu-west-3.amazonaws.com/
+Check out this project online at http://eshop24.s3-website.eu-central-1.amazonaws.com/compact/home
 
 ## Preview
 
